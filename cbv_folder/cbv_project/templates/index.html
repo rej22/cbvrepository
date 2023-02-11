@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+  {% load static %}
+  {% block metadescription %}
+     Index - hollywood hub
+  {% endblock %}
+
+  {% block title %}
+     hollywood hub
+  {% endblock %}
+
+  {% block content %}
+      <div class="container">
+         <div class="row mx-auto">
+             <div class="col-9 col-sm-12 col-md-6 xol-lg-6">
+                 <form method="POST" class="p-3 shadow" enctype="multipart/form-data">
+                     {% csrf_token %}
+                     <input class="form-control" type="text" name="movie_name" placeholder="Enter the movie name">
+                     <input class="form-control" type="text" name="movie_priority" placeholder="Enter the movie priority">
+                     <input class="form-control" type="date" name="movie_date" placeholder="Enter the movie date">
+                     <input class="form-control" type="text" name="movie_info" placeholder="Enter the movie details">
+                     <input class="form-c" type="file" name="movie_img"><br>
+                     <button class="btn-add btn-primary">Add</button>
+                 </form>
+             </div>
+             <div class="col-12 col-sm-12 col-md-6 xol-lg-6">
+                 <img src="{% static 'img/hollywood.jpg' %}" class="hollywood-img shadow" alt="">
+             </div>
+         </div>
+      </div>
+      <div class="container">
+          <div class="row mx-auto">
+              {% for i in movieHomeObj %}
+              <div class="col-9 col-sm-12 col-md-4 xol-lg-4 index_list_div">
+                    <div class="card shadow">
+                      <a href="{% url 'cbv_app:detail' i.id %}"><img src="{{i.movieImg.url}}" class="card-img-top" alt="..."></a>
+                      <div class="card-body">
+                         <h5 class="card-title">{{i.movieName}}</h5>
+                         <a href="{% url 'cbv_app:detail' i.id %}" class="btn btn-primary">More Details</a>
+                      </div>
+                    </div>
+              </div>
+              {% endfor %}
+          </div>
+      </div>
+
+  {% endblock %}

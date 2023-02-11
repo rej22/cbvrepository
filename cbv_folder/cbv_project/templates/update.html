@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+  {% block content %}
+
+     <div class="container update_container text-justify">
+         <div class="row mx-auto">
+             <div class="col-9 col-sm-12 col-md-6 xol-lg-6">
+               <div class="card update_card text-center text-justify">
+                 <div class="card-title update_card-title">
+                     <h5>Movie Update</h5>
+                     <div class="card-body update_card_body">
+                         <form class="p-3 shadow update_form" method="POST" enctype="multipart/form-data">
+                            {% csrf_token %}
+                               {{form.as_p}}
+                             <button class="btn-add btn-primary btn_add_update">Add</button>
+                         </form>
+                     </div>
+                 </div>
+               </div>
+             </div>
+             <div class="col-sm-12 col-md-6 xol-lg-6">
+                 <div class="card update_card text-center text-justify">
+                    <h5>Current Image</h5>
+                    <div class="card-body updated_card_body">
+                      <img src="{{movieDetailObj.movieImg.url}}" class="card-img-top_updated" alt="...">
+                    </div>
+                 </div>
+             </div>
+         </div>
+         <div class="mx-auto text-center text-justify details_icons_div">
+             <a href="{% url 'cbv_app:cbvhome' %}"><i class="fa fa-arrow-left fa-1x"></i></a>
+             <a href="{% url 'cbv_app:update' movieDetailObj.id %}"><i class="fa fa-plus-circle fa-1x"></i></a>
+             <a href="{% url 'cbv_app:delete' movieDetailObj.id %}"><i class="fa fa-trash fa-1x"></i></a>
+             <a href="{% url 'cbv_app:cbvhome' %}"><i class="fa fa-home fa-1x"></i></a>
+         </div>
+     </div>
+
+  {% endblock %}

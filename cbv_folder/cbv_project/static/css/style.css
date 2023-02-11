@@ -1,0 +1,155 @@
+body{
+
+}
+.banner{
+    background-image: linear-gradient(360deg, #13547a 10%, #80d0c7 100%);
+    height: 80px;
+    border-radius: 10px;
+    margin: 7px;
+}
+.navbar-brand h3 {
+    color: #FFFFFF;
+}
+.btn-add{
+   text-align: center;
+}
+.p-3{
+   background-image: linear-gradient(360deg, #13547a 10%, #80d0c7 100%);
+   text-align: center;
+   height: 300px;
+   border-radius: 30px;
+   margin: 7px;
+}
+.form-control{
+   text-align: center;
+   margin: 7px;
+}
+.form-c{
+   text-align: center;
+   margin: 7px;
+}
+.hollywood-img{
+   height: 300px;
+   width: 600px;
+   margin: 7px;
+   border-radius: 30px;
+}
+.card{
+   text-align: center;
+   width: 20rem;
+   height: 440px;
+}
+.index_list_div {
+    padding-bottom: 30px;
+    padding-left: 50px;
+}
+.card-img-top{
+   width: 20rem;
+   height: 375px;
+}
+.card-details{
+   border-radius: 10px;
+   width: 25rem;
+   height: 400px;
+}
+.card-img-top-detail {
+    width: 25rem;
+    height: 320px;
+}
+.card-body-details {
+    color: #000000;
+}
+.me-4 {
+    text-decoration: none;
+}
+.foot_p-3{
+    background-image: linear-gradient(360deg, #13547a 10%, #80d0c7 100%);
+    height: 30px;
+    padding: 5px;
+}
+footer{
+    background-color: #000000;
+}
+.foot_pro_a {
+    text-decoration: none;
+}
+.custom_search_icon {
+    background-color: white;
+    height: 35px;
+    margin-top: 8px;
+}
+.custom_search_ico{
+    color: black;
+}
+.movie_detail_pic {
+    width: 18rem;
+    height: 275px;
+}
+.nav-item .nav-link {
+   color: white;
+   letter-spacing: .2em;
+   font-size: 16px;
+   text-transform: uppercase;
+}
+#navbarDropdown {
+   color: white;
+   letter-spacing: .2em;
+   font-size: 16px;
+   text-transform: uppercase;
+
+}
+.dropdown-item {
+   color: white;
+   background-image: linear-gradient(360deg, #13547a 10%, #80d0c7 100%);
+   letter-spacing: .2em;
+   font-size: 16px;
+   text-transform: uppercase;
+}
+.nav-link .fa{
+    color: white;
+}
+.detail_top_container {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.details_icons_div {
+    margin-top: 20px;
+}
+.details_icons_div .fa{
+    margin-right: 20px;
+}
+.update_card {
+   background-image: linear-gradient(360deg, #13547a 10%, #80d0c7 100%);
+   height: 600px;
+   width: 40rem;
+   border-radius: 10px;
+}
+.update_form {
+   background-image: linear-gradient(135deg, #f5f7fa 10%, #c3cfe2 100%);
+   text-align: center;
+   height: 520px;
+   border-radius: 10px;
+}
+.update_container {
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+.card-img-top_update {
+   height: 600px;
+   width: 40rem;
+   border-radius: 10px;
+}
+.card-img-top_updated {
+   height: 500px;
+   border-radius: 10px;
+}
+.btn_add_update {
+    background-color: white;
+    color: black;
+}
+.updated_card_body {
+    background-image: linear-gradient(135deg, #f5f7fa 10%, #c3cfe2 100%);
+}
+.search_text_empty {
+    padding-bottom: 400px;
+}

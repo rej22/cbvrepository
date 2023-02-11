@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+  {% block metadescription %}
+     {{ movieDetailObj.movieName | truncatewords:155 }}
+  {% endblock %}
+
+  {% block title %}
+     {% if movieDetailObj %}
+        {{ movieDetailObj.movieName }}
+    {% endif %}
+  {% endblock %}
+
+   {% block content %}
+      <div class="container detail_top_container">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                <div class="card shadow text-center text-justify card-details" style="">
+                  <img src="{{movieDetailObj.movieImg.url}}" class="card-img-top-detail" alt="...">
+                  <div class="card-body card-body-details">
+                     <h5 class="card-title">{{movieDetailObj.movieName}}</h5>
+                     <p class="card-text">{{movieDetailObj.movieDate}}</p>
+                  </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+                <h3>Movie Description</h3>
+                <p class="card-text text-justify">{{movieDetailObj.movieInfo}}</p>
+                <div class="mx-auto text-center text-justify details_icons_div">
+                   <a href="{% url 'cbv_app:cbvhome' %}"><i class="fa fa-arrow-left fa-1x"></i></a>
+                   <a href="{% url 'cbv_app:update' movieDetailObj.id %}"><i class="fa fa-plus-circle fa-1x"></i></a>
+                   <a href="{% url 'cbv_app:delete' movieDetailObj.id %}"><i class="fa fa-trash fa-1x"></i></a>
+                   <a href="{% url 'cbv_app:cbvhome' %}"><i class="fa fa-home fa-1x"></i></a>
+                </div>
+            </div>
+        </div>
+      </div>
+
+   {% endblock %}

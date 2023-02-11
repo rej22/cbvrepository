@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+  {% block metadescription %}
+      We have plenty of options for you
+  {% endblock %}
+
+  {% block title %}
+     {% if movieDetailObj %}
+        search
+     {% endif %}
+  {% endblock %}
+
+  {% block content %}
+      <div class="container update_container text-justify">
+          <div>
+              <p class="text-center serched_text">You have searched for <b>'{{query}}'</b></p>
+          </div>
+          <div class="row mx-auto">
+              {% for searchedmovie in searchedMovies %}
+              <div class="col-9 col-sm-12 col-md-3 xol-lg-4">
+                <div class="card shadow " style="width: 18rem; height: 330px">
+                  <a href=""><img class="movie_detail_pic" src="{{searchedmovie.movieImg.url}}" alt="{{searchedmovie.movieName}}"></a>
+                 <div class="card-body search_card_body">
+                   <h5>{{ searchedmovie.movieName }}</h5>
+                 </div>
+                </div>
+              </div>
+              {% empty %}
+                 <div class="container search_text_empty text-justify">
+                     <p class="text-center"> 0 Results found.</p>
+                 </div>
+              {% endfor %}
+          </div>
+          <div class="mx-auto text-center text-justify details_icons_div">
+             <a href="{% url 'cbv_app:cbvhome' %}"><i class="fa fa-arrow-left fa-1x"></i></a>
+             <a href="{% url 'cbv_app:cbvhome' %}"><i class="fa fa-home fa-1x"></i></a>
+         </div>
+      </div>
+  {% endblock %}
