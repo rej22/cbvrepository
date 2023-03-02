@@ -14,7 +14,7 @@ body{
    text-align: center;
 }
 .p-3{
-   background-image: linear-gradient(135deg, #FFE000 10%, #799F0C 100%);
+   background-image: linear-gradient(135deg, #acb6e5 10%, #86fde8 100%);
    text-align: center;
    height: 300px;
    border-radius: 30px;
@@ -68,7 +68,7 @@ body{
     padding: 5px;
 }
 footer{
-    background-color: #BA55D3;
+    background-color: #000000;
 }
 .foot_pro_a {
     text-decoration: none;
