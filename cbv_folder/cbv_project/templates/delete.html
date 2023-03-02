@@ -13,8 +13,6 @@
                          <div class="card-detail delete_card_detail" style="width= 18rem;">
                             <img src="{{movie.movieImg.url}}" class="delete_card_img" alt="...">
                                <h5 class="card-title delete_card_title">{{movie.movieName}}</h5>
-                               <p class="card-text delete_card_text">{{movie.moviePriority}}</p>
-                                <p class="card-text delete_card_text">{{movie.movieDate}}</p>
                          </div>
                          <div class="row">
                             <form method="POST" enctype="multipart/form-data" action="{% url 'cbv_app:delete' movie.id %}">

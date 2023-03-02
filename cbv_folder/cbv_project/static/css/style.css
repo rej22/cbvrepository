@@ -2,7 +2,7 @@ body{
 
 }
 .banner{
-    background-image: linear-gradient(135deg, #acb6e5 10%, #86fde8 100%);
+    background-color: #B0C4DE;
     height: 80px;
     border-radius: 10px;
     margin: 7px;
@@ -14,7 +14,7 @@ body{
    text-align: center;
 }
 .p-3{
-   background-image: linear-gradient(135deg, #acb6e5 10%, #86fde8 100%);
+   background-color: #B0C4DE;
    text-align: center;
    height: 300px;
    border-radius: 30px;
@@ -59,19 +59,40 @@ body{
 .card-body-details {
     color: #000000;
 }
+
+/************
+    footer
+************/
+
 .me-4 {
     text-decoration: none;
 }
 .foot_p-3{
-    background-image: linear-gradient(360deg, #13547a 10%, #80d0c7 100%);
+    background-color: black;
     height: 30px;
     padding: 5px;
 }
 footer{
-    background-image: linear-gradient(135deg, #FDEB71 10%, #F8D800 100%);
+    background-color: black;
+    margin-top: 10px;
+}
+.me-5 {
+    color: #000000;
+    font-size: 20px;
+}
+.fab {
+    margin-left: 20px;
+    padding-right: 5px;
+    color: 	#000000;
+}
+a:hover .fab {
+  color: red;
 }
 .foot_pro_a {
     text-decoration: none;
+}
+a.foot_pro_a:hover {
+  color: #B0C4DE !important;
 }
 .custom_search_icon {
     background-color: white;
@@ -158,6 +179,9 @@ footer{
     delete
 ************/
 
+.delete_container {
+    padding-top: 10px;
+}
 .delete_card_img {
     height: 500px;
     width: 40rem;
