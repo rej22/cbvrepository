@@ -10,5 +10,5 @@ urlpatterns = [
     path('cbvhome', MovieListView.as_view(), name='cbvhome'),
     path('detail/<int:pk>/', MovieDetailView.as_view(), name='detail'),
     path('update/<int:pk>/', MovieUpdateView.as_view(), name='update'),
-    path('delete/<int:pk>/', MovieDeleteView.as_view(), name='delete'),
+    path('movie/<int:pk>/delete/', MovieDeleteView.as_view(), name='delete'),
 ]

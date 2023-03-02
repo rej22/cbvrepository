@@ -45,4 +45,4 @@ class MovieDeleteView(DeleteView):
     model = Movie
     template_name = 'delete.html'
     context_object_name = 'movieDeleteObj'
-    success_url = reverse_lazy('cbv_app:cbvhome')
+    success_url = reverse_lazy('cbv_app:home')

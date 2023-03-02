@@ -63,7 +63,7 @@
                              <form method="POST" enctype="multipart/form-data">
                                {% csrf_token %}
                                   <button type="submit" class="btn btn-danger">Delete</button>
-                                  <a href="{% url 'cbv_app:cbvhome' %}" class="btn btn-primary">Back To Home</a>
+                                  <a href="{% url 'cbv_app:cbvhome' movieDeleteObj.id %}" class="btn btn-primary">Back To Home</a>
                              </form>
                          </div>
                      </div>
