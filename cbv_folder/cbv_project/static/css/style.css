@@ -68,7 +68,7 @@ body{
     padding: 5px;
 }
 footer{
-    background-color: #000000;
+    background-image: linear-gradient(135deg, #FDEB71 10%, #F8D800 100%);
 }
 .foot_pro_a {
     text-decoration: none;
@@ -152,4 +152,17 @@ footer{
 }
 .search_text_empty {
     padding-bottom: 400px;
+}
+
+/************
+    delete
+************/
+
+.delete_card_img {
+    height: 500px;
+    width: 40rem;
+}
+.delete_card_div {
+    width: 50rem;
+    height: 600px;
 }
