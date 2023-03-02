@@ -1,6 +1,11 @@
 body{
 
 }
+
+/************
+    header
+************/
+
 .banner{
     background-color: #B0C4DE;
     height: 80px;
@@ -10,6 +15,27 @@ body{
 .navbar-brand h3 {
     color: #FFFFFF;
 }
+.nav-link .fa{
+    color: white;
+}
+.nav-link {
+    letter-spacing: .1em;
+    font-size: 18px;
+    text-transform: uppercase;
+    padding-left: 20px;
+}
+#navbarDropdown {
+    letter-spacing: .1em;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+.dropdown-item {
+   background-color: #B0C4DE;
+   letter-spacing: .2em;
+   font-size: 16px;
+   text-transform: uppercase;
+}
+
 .btn-add{
    text-align: center;
 }
@@ -106,29 +132,7 @@ a.foot_pro_a:hover {
     width: 18rem;
     height: 275px;
 }
-.nav-item .nav-link {
-   color: white;
-   letter-spacing: .2em;
-   font-size: 16px;
-   text-transform: uppercase;
-}
-#navbarDropdown {
-   color: white;
-   letter-spacing: .2em;
-   font-size: 16px;
-   text-transform: uppercase;
 
-}
-.dropdown-item {
-   color: white;
-   background-image: linear-gradient(360deg, #13547a 10%, #80d0c7 100%);
-   letter-spacing: .2em;
-   font-size: 16px;
-   text-transform: uppercase;
-}
-.nav-link .fa{
-    color: white;
-}
 .detail_top_container {
     margin-top: 10px;
     margin-bottom: 10px;
