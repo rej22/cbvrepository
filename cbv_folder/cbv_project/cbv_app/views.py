@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.urls import reverse_lazy
 from django.views.generic.list import ListView
 from django.views.generic.detail import DetailView
-from django.views.generic.edit import UpdateView, DeleteView
+from django.views.generic import UpdateView, DeleteView
 from cbv_app.models import Movie
 
 
@@ -44,5 +44,4 @@ class MovieUpdateView(UpdateView):
 class MovieDeleteView(DeleteView):
     model = Movie
     template_name = 'delete.html'
-    context_object_name = 'movieDeleteObj'
-    success_url = reverse_lazy('cbv_app:home')
+    success_url = reverse_lazy('cbv_app:cbvhome')
