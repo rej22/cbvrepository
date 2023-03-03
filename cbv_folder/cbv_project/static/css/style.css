@@ -42,8 +42,16 @@ body{
    text-transform: uppercase;
 }
 
+/************
+    index
+************/
+
 .btn-add{
    text-align: center;
+}
+.btn-add:hover {
+    background-color: #FFB6C1;
+    color: white;
 }
 .p-3{
    background-color: #B0C4DE;
