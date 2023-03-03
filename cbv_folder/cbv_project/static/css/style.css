@@ -247,14 +247,20 @@ a.foot_pro_a:hover {
 
 .delete_container {
     padding-top: 10px;
+    padding-bottom: 50px;
 }
 .delete_card_img {
-    height: 500px;
-    width: 40rem;
+    height: 300px;
+    width: 30rem;
 }
 .delete_card_div {
-    width: 50rem;
-    height: 600px;
+    width: 40rem;
+    height: 500px;
+    padding-top: 10px;
+    background-color: #B0C4DE;
+}
+.delete_confirm_row {
+    padding-left: 220px;
 }
 
 /************

@@ -14,7 +14,7 @@
                             <img src="{{movie.movieImg.url}}" class="delete_card_img" alt="...">
                                <h5 class="card-title delete_card_title">{{movie.movieName}}</h5>
                          </div>
-                         <div class="row">
+                         <div class="row delete_confirm_row">
                             <form method="POST" enctype="multipart/form-data" action="{% url 'cbv_app:delete' movie.id %}">
                              {% csrf_token %}
                                 <input type="hidden" name="next" value="{% url 'cbv_app:cbvhome' %}">
