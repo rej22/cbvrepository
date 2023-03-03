@@ -18,8 +18,8 @@
           <div class="row mx-auto">
               {% for searchedmovie in searchedMovies %}
               <div class="col-9 col-sm-12 col-md-3 xol-lg-4">
-                <div class="card shadow " style="width: 18rem; height: 330px">
-                  <a href="{% url 'search_app:detail' searchedmovie.id %}"><img class="movie_detail_pic" src="{{searchedmovie.movieImg.url}}" alt="{{searchedmovie.movieName}}"></a>
+                <div class="card shadow searched_card" style="width: 18rem; height: 330px">
+                  <a href="{% url 'search_app:detail' searchedmovie.id %}"><img class="movie_searched_detail_pic" src="{{searchedmovie.movieImg.url}}" alt="{{searchedmovie.movieName}}"></a>
                  <div class="card-body search_card_body">
                    <h5>{{ searchedmovie.movieName }}</h5>
                  </div>
