@@ -19,7 +19,9 @@ body{
     color: white;
 }
 .nav-item:hover {
-     background-color: 	#FFB6C1;
+     background-color: 	#B0C4DE;
+     border-radius: 5px;
+     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 .nav-item:hover a {
      color: black;
@@ -79,13 +81,25 @@ body{
    width: 20rem;
    height: 440px;
 }
+.card:hover {
+    background-color: #B0C4DE;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+.more_detail_btn:hover {
+    background-color: #FFB6C1;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
 .index_list_div {
     padding-bottom: 30px;
     padding-left: 50px;
+    padding-top: 10px;
 }
 .card-img-top{
    width: 20rem;
    height: 375px;
+   padding: 5px;
 }
 .card-details{
    border-radius: 10px;
