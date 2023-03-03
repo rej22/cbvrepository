@@ -5,9 +5,9 @@
   {% endblock %}
 
   {% block title %}
-     {% if movieDetailObj %}
-        {{ movieDetailObj.movieName }}
-    {% endif %}
+     {% if movieHomeObj %}
+        {{ movieHomeObj.movieName }}
+     {% endif %}
   {% endblock %}
 
    {% block content %}
@@ -15,21 +15,21 @@
         <div class="row">
             <div class="col-12 col-sm-12 col-md-12 col-lg-6">
                 <div class="card shadow text-center text-justify card-details" style="">
-                  <img src="{{movieDetailObj.movieImg.url}}" class="card-img-top-detail" alt="...">
+                  <img src="{{movieHomeObj.movieImg.url}}" class="card-img-top-detail" alt="...">
                   <div class="card-body card-body-details">
-                     <h5 class="card-title">{{movieDetailObj.movieName}}</h5>
-                     <p class="card-text">{{movieDetailObj.movieDate}}</p>
+                     <h5 class="card-title">{{movieHomeObj.movieName}}</h5>
+                     <p class="card-text">{{movieHomeObj.movieDate}}</p>
                   </div>
                 </div>
             </div>
             <div class="col-12 col-sm-12 col-md-12 col-lg-6">
                 <h3>Movie Description</h3>
-                <p class="card-text text-justify">{{movieDetailObj.movieInfo}}</p>
+                <p class="card-text text-justify">{{movieHomeObj.movieInfo }}</p>
                 <div class="mx-auto text-center text-justify details_icons_div">
-                   <a href="{% url 'cbv_app:cbvhome' %}"><i class="fa fa-arrow-left fa-1x"></i></a>
-                   <a href="{% url 'cbv_app:update' movieDetailObj.id %}"><i class="fa fa-plus-circle fa-1x"></i></a>
-                   <a href="{% url 'cbv_app:delete' movieDetailObj.id %}"><i class="fa fa-trash fa-1x"></i></a>
-                   <a href="{% url 'cbv_app:cbvhome' %}"><i class="fa fa-home fa-1x"></i></a>
+                   <a href="{% url 'cbv_app:cbvhome' %}"><i class="fa fa-arrow-circle-left fa-1x detail_page_icons"></i></a>
+                   <a href="{% url 'cbv_app:update' movieHomeObj.id %}"><i class="fa fa-plus-circle fa-1x detail_page_icons"></i></a>
+                   <a href="{% url 'cbv_app:delete' movieHomeObj.id %}"><i class="fa fa-trash fa-1x detail_page_icons"></i></a>
+                   <a href="{% url 'cbv_app:cbvhome' %}"><i class="fa fa-home fa-1x detail_page_icons"></i></a>
                 </div>
             </div>
         </div>

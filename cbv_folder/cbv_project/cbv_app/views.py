@@ -29,7 +29,7 @@ class MovieListView(ListView):
 class MovieDetailView(DetailView):
     model = Movie
     template_name = 'detail.html'
-    context_object_name = 'movieDetailObj'
+    context_object_name = 'movieHomeObj'
 
 class MovieUpdateView(UpdateView):
     model = Movie

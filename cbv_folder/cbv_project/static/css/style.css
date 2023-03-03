@@ -106,6 +106,22 @@ body{
    width: 25rem;
    height: 400px;
 }
+
+/************
+    detail
+************/
+
+.detail_page_icons {
+    background-color: white;
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    color: red;
+    text-align: center;
+}
+.detail_page_icons:hover {
+    background-color: #B0C4DE;
+}
 .card-img-top-detail {
     width: 25rem;
     height: 320px;
@@ -113,6 +129,12 @@ body{
 .card-body-details {
     color: #000000;
 }
+
+/************
+    update
+************/
+
+
 
 /************
     footer
