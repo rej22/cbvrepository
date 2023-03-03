@@ -18,6 +18,12 @@ body{
 .nav-link .fa{
     color: white;
 }
+.nav-item:hover {
+     background-color: 	#FFB6C1;
+}
+.nav-item:hover a {
+     color: black;
+}
 .nav-link {
     letter-spacing: .1em;
     font-size: 18px;
