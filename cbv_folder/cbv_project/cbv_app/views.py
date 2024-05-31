@@ -7,7 +7,7 @@ from cbv_app.models import Movie
 
 
 # Create your views here.
-
+#sample_test
 def home(request):
     movieHomeObj = Movie.objects.all()
     if request.method == 'POST':
